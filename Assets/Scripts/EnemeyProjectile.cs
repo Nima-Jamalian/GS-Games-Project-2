@@ -21,7 +21,7 @@ public class EnemeyProjectile : MonoBehaviour
         {
             other.GetComponent<Player>().TakeDamage();
             projectileMesh.SetActive(false);
-            rigidbody.velocity = Vector3.zero;
+            rigidbody.linearVelocity = Vector3.zero;
             hitParticle.SetActive(true);
             Destroy(this.gameObject, 0.5f);
         }

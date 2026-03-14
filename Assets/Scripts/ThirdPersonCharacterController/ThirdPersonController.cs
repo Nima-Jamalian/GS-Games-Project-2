@@ -64,7 +64,7 @@ public class ThirdPersonController : MonoBehaviour
             return;
         }
         Vector3 pushDirection = new Vector3(hit.moveDirection.x, 0, hit.moveDirection.z);
-        hitRigibody.velocity = pushDirection * pushPower;
+        hitRigibody.linearVelocity = pushDirection * pushPower;
     }
 
     void Animation(Vector3 direction) {
